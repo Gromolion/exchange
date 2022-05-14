@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\MainController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Auth::routes();
+Route::group([
+    'middleware' => 'auth'
+], function() {
+  Route::get('/logout', [LoginController::class, 'logout']);
+  Route::get('profile', [MainController::class, 'profile'])->name('profile');
 });
+
+Route::get('/', [MainController::class, 'index'] )->name('index');
+Route::get('applications/sells', [MainController::class, 'sells'])->name('sells');
+Route::get('applications/buys', [MainController::class, 'buys'])->name('buys');
+Route::get('obligations', [MainController::class, 'obligations'])->name('obligations');

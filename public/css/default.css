@@ -1,0 +1,92 @@
+body {
+    background: url('/img/background.png') fixed;
+}
+
+nav{
+    background-color: #FF8C00;
+}
+
+.nav-link, .dropdown-item {
+    color: white !important;
+    border-bottom: 2px solid #FF8C00;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid white;
+}
+
+.hide {
+    display: none;
+}
+
+#logo {
+    z-index: 1000;
+    width: 70px;
+    height: 70px;
+}
+
+.nav img {
+    height: 50px;
+    width: 50px;
+}
+
+.table {
+    position: absolute;
+    width: 1170px;
+    height: 734px;
+    top: 173px;
+    opacity: 95%;
+    border-radius: 40px;
+    background-color: white;
+}
+
+h1 {
+    width: 399px;
+    height: 48px;
+    left: 761px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: black;
+    margin: 20px auto;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 48px;
+    margin: 95px 965px 0 90px;
+}
+
+h3 {
+    margin-top: -15px;
+    margin-left: 90px;
+    color: black;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+table {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 100px auto;
+    width: 1070px;
+    height: 312px;
+    border: 3px solid black;
+    border-collapse: collapse;
+    color: black;
+}
+th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 60px;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
