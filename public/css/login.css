@@ -11,7 +11,7 @@ input {
     display: flex;
     position: relative;
     border-radius: 15px;
-    height: 450px;
+    height: 480px;
     width: 530px;
     background-color: white;
     margin: 210px auto auto auto;
@@ -100,7 +100,7 @@ h1 {
 
 p {
     margin: 0;
-    width: 120px;
+    width: 140px;
 }
 
 a {

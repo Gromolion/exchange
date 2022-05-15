@@ -1,12 +1,17 @@
 body {
     background: url('/img/background.png') fixed;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    width: 1170px !important;
 }
 
 nav{
     background-color: #FF8C00;
 }
 
-.nav-link, .dropdown-item {
+.nav-link, .dropdown-item, .admin-h {
     color: white !important;
     border-bottom: 2px solid #FF8C00;
 }
@@ -20,30 +25,50 @@ nav{
 }
 
 #logo {
+    transition: 0.2s;
+    top: -6px;
+    position: absolute;
     z-index: 1000;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
 }
 
+#logo:hover {
+    transition: 0.2s;
+    width: 95px;
+    height: 95px;
+}
 .nav img {
     height: 50px;
     width: 50px;
 }
 
-.table {
-    position: absolute;
-    width: 1170px;
-    height: 734px;
-    top: 173px;
-    opacity: 95%;
+.content {
+    margin: 40px auto;
+    padding: 20px 0;
     border-radius: 40px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 1250px;
+}
+
+.index-content {
+    margin: 40px auto;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 1100px;
+    padding: 20px 58px;
+}
+
+.confrim-appl-content {
+    margin: 40px auto;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 600px;
+    padding: 20px 58px;
 }
 
 h1 {
-    width: 399px;
-    height: 48px;
-    left: 761px;
+    text-align: center;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
@@ -51,42 +76,166 @@ h1 {
     margin: 20px auto;
 }
 
-h2 {
+.info {
+    margin-left: 90px;
     font-weight: 700;
-    font-size: 34px;
     line-height: 48px;
-    margin: 95px 965px 0 90px;
+}
+
+.index {
+    margin-top: 40px;
+}
+
+.index-img {
+    width: 586px;
+    height: 438px;
+    opacity: 1000%;
+    margin-bottom: 80px;
+}
+
+h2, h3 {
+    margin: 0;
 }
 
 h3 {
-    margin-top: -15px;
-    margin-left: 90px;
     color: black;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
 }
 
 table {
-    font-weight: 600;
     font-size: 24px;
     line-height: 36px;
-    margin: 100px auto;
-    width: 1070px;
-    height: 312px;
+    width: 90%;
+    margin: 0 auto;
     border: 3px solid black;
     border-collapse: collapse;
     color: black;
 }
+
+thead {
+    font-weight: 700;
+}
+tbody {
+    font-weight: 100;
+}
+
 th {
     border: 2px solid black;
     border-collapse: collapse;
 }
+
 td {
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 40px;
     border: 3px solid black;
     border-collapse: collapse;
+}
+
+#t1 td {
+    width: 50%;
+}
+
+#profile-name {
+    font-size: 48px;
+}
+
+#index-p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    margin: 28px 0 40px;
+    width: 380px;
+}
+
+#index-h {
+    width: 380px;
+    color: black;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+}
+
+#index-sell, #index-buy, .button, .confirm-appl-btn {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: .3s;
+    color: white;
+    height: 48px;
+    background-color: #FF8A00;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 12px 40px;
+    border: none;
+    text-decoration: none;
+}
+
+#index-sell:hover, #index-buy:hover, .button:hover, .confirm-appl-btn:hover {
+    transition: .3s;
+    border: 1px solid #FF8A00;
+    background-color: white;
+    color: #FF8A00;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.button {
+    margin: 30px 0;
+}
+
+.confirm-appl-form {
+    text-align: left;
+}
+
+.confirm-label {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.confirm-input {
+    margin: 0 auto;
+    width: 300px;
+    display: block;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.confirm-appl-btn {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left-item {
+    display: flex;
+    align-items: center;
+}
+
+.left-link {
+    color: black;
+    font-size: 30px;
+    width: 250px;
+}
+
+.left-link-description {
+    margin: 0;
+}
+
+#exprirate {
+    text-align: center;
+}
+
+.table-container {
+    max-height: 450px;
+    overflow-y: scroll;
 }

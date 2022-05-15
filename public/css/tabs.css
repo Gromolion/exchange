@@ -1,0 +1,27 @@
+#tabs {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#tabs li.selector {
+    font-size: 25px;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 3px 8px;
+    margin: 0 10px;
+}
+
+#tabs li.selected {
+    background-color: #FF8A00;
+}
+
+#tabs li.selector:hover {
+    background-color: #FF8A00;
+}
+
+div.dtable {
+    text-align: justify;
+    width: 500px;
+}

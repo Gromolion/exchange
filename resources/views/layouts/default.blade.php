@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light py-2 px-4 fs-5">
         <div class="container">
-            <a href="{{ route('index')}}" class="navbar-brand"><img src="/img/logo.png" alt="жыбий рыр" id="logo"></a>
+            <a href="{{ route('index')}}" class="navbar-brand"><img src="/img/logo.svg" alt="жыбий рыр" id="logo"></a>
             <div class="collapse navbar-collapse justify-content-center">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -24,7 +24,7 @@
                             Список заявок
                         </a>
 
-                        <ul class="dropdown-menu dropdown-menu-end mx-5" style="background-color: #FF8C00;" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu dropdown-menu-start mx-5" style="background-color: #FF8C00;" aria-labelledby="navbarDropdown">
                             <li><a href="{{ route('sells') }}" class="dropdown-item" style="background-color: #FF8C00;">На продажу</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a href="{{ route('buys') }}" class="dropdown-item" style="background-color: #FF8C00;">На покупку</a></li>
@@ -49,14 +49,16 @@
                         @endif
                     @else
                         <li class="nav-item"><a href="{{ route('profile') }}" class="nav-link fw-bold"><img src="/img/profile.svg" alt=""></a></li>
-                        <li class="nav-item d-flex align-items-center"><a href="" class="nav-link fw-bold">Админ-панель</a></li>
+                    @admin
+                        <li class="nav-item d-flex align-items-center"><a href="{{ route('admin.index') }}" class="nav-link fw-bold">Админ-панель</a></li>
+                    @endadmin
                         <li class="nav-item d-flex align-items-center"><a href="{{ route('logout') }}" class="nav-link fw-bold">Выйти</a></li>
                     @endguest
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="containter">
+    <div class="container">
         @yield('content')
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>

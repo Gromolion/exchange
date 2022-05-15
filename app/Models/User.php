@@ -46,4 +46,14 @@ class User extends Authenticatable
     {
         return $this->is_admin === 1;
     }
+
+    public function getId() {
+        $id = (string)$this->id;
+        if (strlen($id) < 5) {
+            while (strlen($id) != 5) {
+                $id = '0'.$id;
+            }
+        }
+        return $id;
+    }
 }

@@ -1,0 +1,146 @@
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 10%;
+    z-index: 99;
+    overflow: auto;
+    background: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    position: fixed;
+    left: 25%;
+    top: -15%;
+    color: black;
+    border-radius: 40px;;
+    background: white;
+    padding: 20px;
+    width: 52%;
+    margin: 15% auto;
+    border: 1px solid #888;
+}
+
+.profile-modal-content {
+    position: fixed;
+    left: 22%;
+    top: -15%;
+    color: black;
+    border-radius: 40px;;
+    background: white;
+    padding: 20px;
+    width: 60%;
+    margin: 15% auto;
+    border: 1px solid #888;
+}
+
+.close {
+    margin-right: 25px;
+    margin-top: 15px;
+    display: block;
+    text-align: right;
+}
+
+.close:hover {
+    color: red;
+}
+
+#modalInfo {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.modal-content input, .profile-modal-content input {
+    height: 25px;
+    border-radius: 2px;
+    border: 0;
+    margin-top: 0px;
+    width: 190px
+}
+
+.modal-content p, .profile-modal-content p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#call-btn {
+    margin-top: 25px;
+    margin-left: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: .3s;
+    color: white;
+    height: 50px;
+    background-color: #FF8A00;
+    border-radius: 15px;
+    border: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 12px 60px;
+    text-decoration: none;
+}
+
+#call-btn:hover {
+    border: #FF8A00 1px solid;
+    color: #FF8A00;
+    background: white;
+    transition: 0.3s;
+}
+
+.modal-table {
+    position: relative;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 35px auto;
+    width: 70%;
+    border: 3px solid black;
+    border-collapse: collapse;
+    color: black;
+}
+th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+tbody td {
+    text-align: left;
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 3px solid black;
+    border-collapse: collapse;
+    font-weight: 100;
+}
+
+.data {
+    display: flex;
+}
+
+.modal input, .modal label {
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.modal input {
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    border: none;
+    border-radius: 35px;
+    width: 201px;
+    background: #F2F6FC;
+    padding: 25px;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
